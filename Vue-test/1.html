@@ -1,0 +1,447 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+	<link rel = "stylesheet" href="index.css">
+	<script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>	
+</head>
+  <body>
+        <div id="app">
+         <ol>
+         	<todo-item></todo-item>
+         </ol>>
+        </div>
+        <script src = "index.js"></script>>
+  </body>
+</html>
+ -->
+ <!-- <html>
+  <head>
+	<link rel = "stylesheet" href="index.css">
+	<script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>	
+</head>
+  <body>
+       <div id="demo">{{ fullName }}</div>
+        <script src = "index.js"></script>>
+  </body>
+</html> -->
+
+
+<!-- <html>
+  <head>
+	<link rel = "stylesheet" href="index.css">
+	<script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>	
+</head>
+  <body>
+       <div id="watch-example">
+         <p>
+          Ask a yes/no question:
+          <input v-model="question">
+         </p>
+         <p>{{ answer }}</p>
+       </div>
+        <script src = "index.js"></script>>
+  </body>
+</html> -->
+
+
+
+
+<!-- <html>
+  <head>
+	<link rel = "stylesheet" href="index.css">
+	<script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>	
+</head>
+  <body>
+       <ul id="example-1">
+      <li v-for="item in items">
+        {{ item.message }}
+      </li>
+</ul>
+        <script src = "index.js"></script>>
+  </body>
+</html>  -->
+
+
+
+
+<!-- <html>
+  <head>
+	<link rel = "stylesheet" href="index.css">
+	<script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>	
+</head>
+  <body>
+      <ul id="v-for-object" class="demo">
+       <div v-for="(value, name, index) in object">
+        {{ index }}. {{ name }}: {{ value }}
+       </div>
+       </ul>
+        <script src = "index.js"></script>>
+  </body>
+</html>  -->
+
+
+
+
+<!-- <html>
+  <head>
+	<link rel = "stylesheet" href="index.css">
+	<script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>	
+</head>
+  <body>
+      <div id="todo-list-example">
+  <form v-on:submit.prevent="addNewTodo">
+    <label for="new-todo">Add a todo</label>
+    <input
+      v-model="newTodoText"
+      id="new-todo"
+      placeholder="E.g. Feed the cat"
+    >
+    <button>Add</button>
+  </form>
+  <ul>
+    <li
+      is="todo-item"
+      v-for="(todo, index) in todos"
+      v-bind:key="todo.id"
+      v-bind:title="todo.title"
+      v-on:remove="todos.splice(index, 1)"
+    ></li>
+  </ul>
+</div>
+        <script src = "index.js"></script>>
+  </body>
+</html>  -->
+
+
+
+<!-- 
+<html>
+  <head>
+	<link rel = "stylesheet" href="index.css">
+	<script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>	
+</head>
+  <body>
+      <div id="example-3">
+      <button v-on:click="say('hi')">Say hi</button>
+       <button v-on:click="say('what')">Say what</button>
+      </div>
+        <script src = "index.js"></script>>
+  </body>
+</html>  -->
+
+
+
+
+
+<!-- <html>
+  <head>
+	<link rel = "stylesheet" href="index.css">
+	<script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>	
+</head>
+  <body>
+      <div id='example-3'>
+      <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+      <label for="jack">Jack</label>
+      <input type="checkbox" id="john" value="John" v-model="checkedNames">
+     <label for="john">John</label>
+      <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+       <label for="mike">Mike</label>
+       <br>
+      <span>Checked names: {{ checkedNames }}</span>
+      </div>
+        <script src = "index.js"></script>>
+  </body>
+</html>  -->
+
+
+
+<!-- <html>
+  <head>
+	<link rel = "stylesheet" href="index.css">
+	<script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>	
+</head>
+  <body>
+      <select v-model="selected">
+         <option v-for="option in options" v-bind:value="option.value">
+            {{ option.text }}
+         </option>
+     </select>
+     <span>Selected: {{ selected }}</span>
+        <script src = "index.js"></script>>
+  </body>
+</html>  -->
+
+
+
+<!-- <html>
+  <head>
+	<link rel = "stylesheet" href="index.css">
+	<script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>	
+</head>
+  <body>
+     
+     <div id="components-demo">
+        <button-counter></button-counter>
+     </div>
+        <script src = "index.js"></script>>
+  </body>
+</html>  -->
+
+
+
+<!-- 
+<html>
+  <head>
+	<link rel = "stylesheet" href="index.css">
+	<script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>	
+</head>
+  <body>
+    <div id="blog-posts-events-demo">
+    <div :style="{ fontSize: postFontSize + 'em' }">
+    <blog-post
+      v-for="post in posts"
+      v-bind:key="post.id"
+      v-bind:post="post"
+      v-on:enlarge-text="postFontSize += 0.1"
+    ></blog-post>
+    <button v-on:click="$emit('enlarge-text')">
+      Enlarge text
+     </button>
+  </div>
+</div>
+        <script src = "index.js"></script>>
+  </body>
+</html>  -->
+
+
+
+
+<!-- 
+<html>
+  <head>
+  <link rel = "stylesheet" href="index.css">
+  <script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+</head>
+  <body>
+   <base-input v-on:focus.native="onFocus"></base-input>
+   <label>
+  {{ label }}
+  <input
+    v-bind="$attrs"
+    v-bind:value="value"
+    v-on:input="$emit('input', $event.target.value)"
+  >
+</label>
+        <script src = "index.js"></script>>
+  </body>
+</html>  -->
+
+
+
+
+<!-- <html>
+  <head>
+  <link rel = "stylesheet" href="index.css">
+  <script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+</head>
+  <body>
+   <div id="demo">
+  <button v-on:click="show = !show">
+    Toggle
+  </button>
+  <transition name="fade">
+    <p v-if="show">hello</p>
+  </transition>
+</div>
+        <script src = "index.js"></script>>
+  </body>
+</html>  -->
+
+
+
+<!--  css过渡动画效果 -->
+<!-- <html>
+  <head>
+  <link rel = "stylesheet" href="index.css">
+  <script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+</head>
+  <body>
+   <div id="example-1">
+  <button @click="show = !show">
+    Toggle render
+  </button>
+  <transition name="slide-fade">
+    <p v-if="show">hello</p>
+  </transition>
+</div>
+        <script src = "index.js"></script>>
+  </body>
+</html>   -->
+
+
+
+
+<!--
+Velocity 和 jQuery.animate 的工作方式类似，也是用来实现 JavaScript 动画的一个很棒的选择
+-->
+<!-- <html>
+  <head>
+  <link rel = "stylesheet" href="index.css">
+  <script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+</head>>
+<body>
+<div id="example-4">
+  <button @click="show = !show">
+    Toggle
+  </button>
+  <transition
+    v-on:before-enter="beforeEnter"
+    v-on:enter="enter"
+    v-on:leave="leave"
+    v-bind:css="false"
+  >
+    <p v-if="show">
+      Demo
+    </p>
+  </transition>
+</div>
+<script src = "index.js"></script>>
+  </body>
+</html> -->
+
+
+
+
+<!-- <html>
+  <head>
+  <link rel = "stylesheet" href="index.css">
+  <script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+</head>>
+<body>
+<div id="list-demo" class="demo">
+  <button v-on:click="add">Add</button>
+  <button v-on:click="remove">Remove</button>
+  <transition-group name="list" tag="p">
+    <span v-for="item in items" v-bind:key="item" class="list-item">
+      {{ item }}
+    </span>
+  </transition-group>
+</div>
+<script src = "index.js"></script>>
+  </body>
+</html> -->
+
+
+
+
+<!-- <html>
+  <head>
+  <link rel = "stylesheet" href="index.css">
+  <script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+</head>>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
+
+<div id="flip-list-demo" class="demo">
+  <button v-on:click="shuffle">Shuffle</button>
+  <transition-group name="flip-list" tag="ul">
+    <li v-for="item in items" v-bind:key="item">
+      {{ item }}
+    </li>
+  </transition-group>
+</div>
+<script src = "index.js"></script>>
+  </body>
+</html> -->
+
+
+
+<!-- <html>
+  <head>
+  <link rel = "stylesheet" href="index.css">
+  <script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+</head>>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+
+<div id="staggered-list-demo">
+  <input v-model="query">
+  <transition-group
+    name="staggered-fade"
+    tag="ul"
+    v-bind:css="false"
+    v-on:before-enter="beforeEnter"
+    v-on:enter="enter"
+    v-on:leave="leave"
+  >
+    <li
+      v-for="(item, index) in computedList"
+      v-bind:key="item.msg"
+      v-bind:data-index="index"
+    >{{ item.msg }}</li>
+  </transition-group>
+</div>
+<script src = "index.js"></script>>
+  </body>
+</html> -->
+
+
+
+
+<!-- <html>
+  <head>
+  <link rel = "stylesheet" href="index.css">
+  <script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+</head>>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+
+<div id="dynamic-fade-demo" class="demo">
+  Fade In: <input type="range" v-model="fadeInDuration" min="0" v-bind:max="maxFadeDuration">
+  Fade Out: <input type="range" v-model="fadeOutDuration" min="0" v-bind:max="maxFadeDuration">
+  <transition
+    v-bind:css="false"
+    v-on:before-enter="beforeEnter"
+    v-on:enter="enter"
+    v-on:leave="leave"
+  >
+    <p v-if="show">hello</p>
+  </transition>
+  <button
+    v-if="stop"
+    v-on:click="stop = false; show = false"
+  >Start animating</button>
+  <button
+    v-else
+    v-on:click="stop = true"
+  >Stop it!</button>
+</div>
+<script src = "index.js"></script>>
+  </body>
+</html> -->
+
+
+
+
+<html>
+  <head>
+  <link rel = "stylesheet" href="index.css">
+  <script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+</head>>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/tween.js@16.3.4"></script>
+
+<div id="example-8">
+  <input v-model.number="firstNumber" type="number" step="20"> +
+  <input v-model.number="secondNumber" type="number" step="20"> =
+  {{ result }}
+  <p>
+    <animated-integer v-bind:value="firstNumber"></animated-integer> +
+    <animated-integer v-bind:value="secondNumber"></animated-integer> =
+    <animated-integer v-bind:value="result"></animated-integer>
+  </p>
+</div>
+<script src = "index.js"></script>>
+  </body>
+</html>
